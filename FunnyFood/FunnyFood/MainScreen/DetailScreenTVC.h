@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailScreenTVC : UITableViewController
-
+@property(nonatomic, assign) NSString *stringTitleGroup;
+@property(nonatomic, assign) BOOL isSaleOff;
 @end

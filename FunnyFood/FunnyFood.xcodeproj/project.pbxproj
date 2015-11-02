@@ -72,6 +72,17 @@
 		0397C7431BE2218E005896DD /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397C7411BE2218E005896DD /* CustomCell.m */; };
 		0397C7441BE2218E005896DD /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0397C7421BE2218E005896DD /* CustomCell.xib */; };
 		0397C7471BE22543005896DD /* DataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397C7461BE22543005896DD /* DataItem.m */; };
+		0397C74B1BE307B7005896DD /* ContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397C7491BE307B7005896DD /* ContentVC.m */; };
+		0397C74C1BE307B7005896DD /* ContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0397C74A1BE307B7005896DD /* ContentVC.xib */; };
+		0399C4961BE34BA900E8AD41 /* location_ic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4951BE34BA900E8AD41 /* location_ic.png */; };
+		0399C4981BE34C0900E8AD41 /* location_ic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4971BE34C0900E8AD41 /* location_ic2.png */; };
+		0399C49C1BE34CC200E8AD41 /* DetailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0399C49A1BE34CC200E8AD41 /* DetailAddress.m */; };
+		0399C49D1BE34CC200E8AD41 /* DetailAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0399C49B1BE34CC200E8AD41 /* DetailAddress.xib */; };
+		0399C4A11BE354DA00E8AD41 /* 36CG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C49F1BE354DA00E8AD41 /* 36CG.png */; };
+		0399C4A21BE354DA00E8AD41 /* 255NK.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4A01BE354DA00E8AD41 /* 255NK.png */; };
+		0399C4A41BE35DFF00E8AD41 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4A31BE35DFF00E8AD41 /* wall.png */; };
+		0399C4A81BE3744800E8AD41 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0399C4A61BE3744800E8AD41 /* TestVC.m */; };
+		0399C4A91BE3744800E8AD41 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4A71BE3744800E8AD41 /* TestVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +188,20 @@
 		0397C7421BE2218E005896DD /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = MainScreen/CustomCell.xib; sourceTree = "<group>"; };
 		0397C7451BE22543005896DD /* DataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataItem.h; sourceTree = "<group>"; };
 		0397C7461BE22543005896DD /* DataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataItem.m; sourceTree = "<group>"; };
+		0397C7481BE307B7005896DD /* ContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentVC.h; path = MainScreen/ContentVC.h; sourceTree = "<group>"; };
+		0397C7491BE307B7005896DD /* ContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentVC.m; path = MainScreen/ContentVC.m; sourceTree = "<group>"; };
+		0397C74A1BE307B7005896DD /* ContentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContentVC.xib; path = MainScreen/ContentVC.xib; sourceTree = "<group>"; };
+		0399C4951BE34BA900E8AD41 /* location_ic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_ic.png; sourceTree = "<group>"; };
+		0399C4971BE34C0900E8AD41 /* location_ic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_ic2.png; sourceTree = "<group>"; };
+		0399C4991BE34CC200E8AD41 /* DetailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailAddress.h; path = Address/DetailAddress.h; sourceTree = "<group>"; };
+		0399C49A1BE34CC200E8AD41 /* DetailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailAddress.m; path = Address/DetailAddress.m; sourceTree = "<group>"; };
+		0399C49B1BE34CC200E8AD41 /* DetailAddress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailAddress.xib; path = Address/DetailAddress.xib; sourceTree = "<group>"; };
+		0399C49F1BE354DA00E8AD41 /* 36CG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36CG.png; sourceTree = "<group>"; };
+		0399C4A01BE354DA00E8AD41 /* 255NK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 255NK.png; sourceTree = "<group>"; };
+		0399C4A31BE35DFF00E8AD41 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		0399C4A51BE3744800E8AD41 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestVC.h; path = MainScreen/TestVC.h; sourceTree = "<group>"; };
+		0399C4A61BE3744800E8AD41 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestVC.m; path = MainScreen/TestVC.m; sourceTree = "<group>"; };
+		0399C4A71BE3744800E8AD41 /* TestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestVC.xib; path = MainScreen/TestVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +305,9 @@
 			children = (
 				0397C6B71BE1D304005896DD /* AddressVC.h */,
 				0397C6B81BE1D304005896DD /* AddressVC.m */,
+				0399C4991BE34CC200E8AD41 /* DetailAddress.h */,
+				0399C49A1BE34CC200E8AD41 /* DetailAddress.m */,
+				0399C49B1BE34CC200E8AD41 /* DetailAddress.xib */,
 			);
 			name = Address;
 			sourceTree = "<group>";
@@ -301,9 +329,15 @@
 				0397C6B11BE1D2C6005896DD /* MainScreenVC.xib */,
 				0397C73D1BE22017005896DD /* DetailScreenTVC.h */,
 				0397C73E1BE22017005896DD /* DetailScreenTVC.m */,
+				0397C7481BE307B7005896DD /* ContentVC.h */,
+				0397C7491BE307B7005896DD /* ContentVC.m */,
+				0397C74A1BE307B7005896DD /* ContentVC.xib */,
 				0397C7401BE2218E005896DD /* CustomCell.h */,
 				0397C7411BE2218E005896DD /* CustomCell.m */,
 				0397C7421BE2218E005896DD /* CustomCell.xib */,
+				0399C4A51BE3744800E8AD41 /* TestVC.h */,
+				0399C4A61BE3744800E8AD41 /* TestVC.m */,
+				0399C4A71BE3744800E8AD41 /* TestVC.xib */,
 			);
 			name = MainScreen;
 			sourceTree = "<group>";
@@ -311,6 +345,8 @@
 		0397C6BD1BE1D3AE005896DD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0399C4A31BE35DFF00E8AD41 /* wall.png */,
+				0399C49E1BE354CC00E8AD41 /* map */,
 				0397C73B1BE20E3F005896DD /* background.png */,
 				0397C7261BE20B22005896DD /* imageGroupDrink */,
 				0397C6FB1BE1F89C005896DD /* imageTab */,
@@ -324,26 +360,12 @@
 		0397C6C01BE1F50A005896DD /* image */ = {
 			isa = PBXGroup;
 			children = (
-				0397C6C11BE1F52E005896DD /* cafetrung.jpg */,
-				0397C6C21BE1F52E005896DD /* chanhdaongammatong.jpg */,
-				0397C6C31BE1F52E005896DD /* chebuoi.jpg */,
-				0397C6C41BE1F52E005896DD /* chetranchau.jpg */,
-				0397C6C61BE1F52E005896DD /* cocktailchanhmatong.jpg */,
-				0397C6C71BE1F52E005896DD /* duabodamduong.jpg */,
-				0397C6C81BE1F52E005896DD /* kemduabo.jpg */,
-				0397C6C91BE1F52E005896DD /* lattetraxanh.jpg */,
-				0397C6CA1BE1F52E005896DD /* mangopassion.jpg */,
-				0397C6CB1BE1F52E005896DD /* manngamduong.jpg */,
-				0397C6CC1BE1F52E005896DD /* nuocchanhmatong.jpg */,
-				0397C6CD1BE1F52E005896DD /* nuocchanhmuoi.jpg */,
-				0397C6CE1BE1F52E005896DD /* nuocdautam.jpg */,
-				0397C6CF1BE1F52E005896DD /* nuocdualeobacha.jpg */,
-				0397C6D01BE1F52E005896DD /* nuocepcantaytao.jpg */,
-				0397C6D11BE1F52E005896DD /* nuocepdualeo.jpg */,
-				0397C6D21BE1F52E005896DD /* nuocmatretranhmialau.jpg */,
-				0397C6D31BE1F52E005896DD /* nuocmatsuongsauhate.jpg */,
-				0397C6D41BE1F52E005896DD /* nuocmialauduongphen.jpg */,
-				0397C6D51BE1F52E005896DD /* nuocmo.jpg */,
+				0399C48F1BE329B800E8AD41 /* other */,
+				0399C48A1BE3296200E8AD41 /* coffee */,
+				0399C48E1BE3297500E8AD41 /* tea */,
+				0399C48D1BE3297300E8AD41 /* fruit */,
+				0399C48C1BE3297000E8AD41 /* wine */,
+				0399C48B1BE3296E00E8AD41 /* cola */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -366,6 +388,8 @@
 		0397C6FB1BE1F89C005896DD /* imageTab */ = {
 			isa = PBXGroup;
 			children = (
+				0399C4971BE34C0900E8AD41 /* location_ic2.png */,
+				0399C4951BE34BA900E8AD41 /* location_ic.png */,
 				0397C6FC1BE1FB2D005896DD /* drink_active.png */,
 				0397C6FD1BE1FB2D005896DD /* drink.png */,
 				0397C6FE1BE1FB2D005896DD /* information_active.png */,
@@ -439,6 +463,77 @@
 				0397C7301BE20B60005896DD /* tea_active.png */,
 			);
 			name = imageGroupDrink;
+			sourceTree = "<group>";
+		};
+		0399C48A1BE3296200E8AD41 /* coffee */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = coffee;
+			sourceTree = "<group>";
+		};
+		0399C48B1BE3296E00E8AD41 /* cola */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cola;
+			sourceTree = "<group>";
+		};
+		0399C48C1BE3297000E8AD41 /* wine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = wine;
+			sourceTree = "<group>";
+		};
+		0399C48D1BE3297300E8AD41 /* fruit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = fruit;
+			sourceTree = "<group>";
+		};
+		0399C48E1BE3297500E8AD41 /* tea */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tea;
+			sourceTree = "<group>";
+		};
+		0399C48F1BE329B800E8AD41 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				0397C6C11BE1F52E005896DD /* cafetrung.jpg */,
+				0397C6C21BE1F52E005896DD /* chanhdaongammatong.jpg */,
+				0397C6C31BE1F52E005896DD /* chebuoi.jpg */,
+				0397C6C41BE1F52E005896DD /* chetranchau.jpg */,
+				0397C6C61BE1F52E005896DD /* cocktailchanhmatong.jpg */,
+				0397C6C71BE1F52E005896DD /* duabodamduong.jpg */,
+				0397C6C81BE1F52E005896DD /* kemduabo.jpg */,
+				0397C6C91BE1F52E005896DD /* lattetraxanh.jpg */,
+				0397C6CA1BE1F52E005896DD /* mangopassion.jpg */,
+				0397C6CB1BE1F52E005896DD /* manngamduong.jpg */,
+				0397C6CC1BE1F52E005896DD /* nuocchanhmatong.jpg */,
+				0397C6CD1BE1F52E005896DD /* nuocchanhmuoi.jpg */,
+				0397C6CE1BE1F52E005896DD /* nuocdautam.jpg */,
+				0397C6CF1BE1F52E005896DD /* nuocdualeobacha.jpg */,
+				0397C6D01BE1F52E005896DD /* nuocepcantaytao.jpg */,
+				0397C6D11BE1F52E005896DD /* nuocepdualeo.jpg */,
+				0397C6D21BE1F52E005896DD /* nuocmatretranhmialau.jpg */,
+				0397C6D31BE1F52E005896DD /* nuocmatsuongsauhate.jpg */,
+				0397C6D41BE1F52E005896DD /* nuocmialauduongphen.jpg */,
+				0397C6D51BE1F52E005896DD /* nuocmo.jpg */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		0399C49E1BE354CC00E8AD41 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				0399C49F1BE354DA00E8AD41 /* 36CG.png */,
+				0399C4A01BE354DA00E8AD41 /* 255NK.png */,
+			);
+			name = map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,13 +617,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0397C73A1BE20B61005896DD /* tea_active.png in Resources */,
+				0399C4A91BE3744800E8AD41 /* TestVC.xib in Resources */,
 				0397C6961BE1D249005896DD /* LaunchScreen.xib in Resources */,
 				0397C6E21BE1F52E005896DD /* nuocchanhmuoi.jpg in Resources */,
 				0397C70A1BE1FB2D005896DD /* sale_active.png in Resources */,
+				0399C49D1BE34CC200E8AD41 /* DetailAddress.xib in Resources */,
+				0397C74C1BE307B7005896DD /* ContentVC.xib in Resources */,
 				0397C7061BE1FB2D005896DD /* information_active.png in Resources */,
 				0397C6D61BE1F52E005896DD /* cafetrung.jpg in Resources */,
 				0397C6DC1BE1F52E005896DD /* duabodamduong.jpg in Resources */,
 				0397C6E41BE1F52E005896DD /* nuocdualeobacha.jpg in Resources */,
+				0399C4981BE34C0900E8AD41 /* location_ic2.png in Resources */,
 				0397C6931BE1D249005896DD /* Images.xcassets in Resources */,
 				0397C73C1BE20E3F005896DD /* background.png in Resources */,
 				0397C6E71BE1F52E005896DD /* nuocmatretranhmialau.jpg in Resources */,
@@ -540,6 +639,7 @@
 				0397C6D91BE1F52E005896DD /* chetranchau.jpg in Resources */,
 				0397C7351BE20B61005896DD /* cola.png in Resources */,
 				0397C7321BE20B61005896DD /* wine.png in Resources */,
+				0399C4A11BE354DA00E8AD41 /* 36CG.png in Resources */,
 				0397C7091BE1FB2D005896DD /* location.png in Resources */,
 				0397C7331BE20B61005896DD /* cafe_active.png in Resources */,
 				0397C7361BE20B61005896DD /* cola_active.png in Resources */,
@@ -548,12 +648,15 @@
 				0397C6DB1BE1F52E005896DD /* cocktailchanhmatong.jpg in Resources */,
 				0397C6EA1BE1F52E005896DD /* nuocmo.jpg in Resources */,
 				0397C7391BE20B61005896DD /* tea.png in Resources */,
+				0399C4A41BE35DFF00E8AD41 /* wall.png in Resources */,
 				0397C6D81BE1F52E005896DD /* chebuoi.jpg in Resources */,
 				0397C7371BE20B61005896DD /* fruit.png in Resources */,
 				0397C7051BE1FB2D005896DD /* drink.png in Resources */,
 				0397C7071BE1FB2D005896DD /* information.png in Resources */,
 				0397C6D71BE1F52E005896DD /* chanhdaongammatong.jpg in Resources */,
 				0397C6DF1BE1F52E005896DD /* mangopassion.jpg in Resources */,
+				0399C4A21BE354DA00E8AD41 /* 255NK.png in Resources */,
+				0399C4961BE34BA900E8AD41 /* location_ic.png in Resources */,
 				0397C70B1BE1FB2D005896DD /* sale.png in Resources */,
 				0397C6B31BE1D2C6005896DD /* MainScreenVC.xib in Resources */,
 				0397C7081BE1FB2D005896DD /* location_active.png in Resources */,
@@ -583,12 +686,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0399C49C1BE34CC200E8AD41 /* DetailAddress.m in Sources */,
+				0397C74B1BE307B7005896DD /* ContentVC.m in Sources */,
 				0397C73F1BE22017005896DD /* DetailScreenTVC.m in Sources */,
 				0397C7211BE1FE39005896DD /* XlsReader.cpp in Sources */,
 				0397C7431BE2218E005896DD /* CustomCell.m in Sources */,
 				0397C6F41BE1F686005896DD /* QZWorkbook.m in Sources */,
 				0397C7221BE1FE39005896DD /* endian.c in Sources */,
 				0397C7251BE1FE39005896DD /* xlstool.c in Sources */,
+				0399C4A81BE3744800E8AD41 /* TestVC.m in Sources */,
 				0397C6BC1BE1D319005896DD /* AboutVC.m in Sources */,
 				0397C6F51BE1F686005896DD /* QZWorkSheet.m in Sources */,
 				0397C6B91BE1D304005896DD /* AddressVC.m in Sources */,
@@ -806,6 +912,7 @@
 				0397C6A71BE1D249005896DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0397C6A81BE1D249005896DD /* Build configuration list for PBXNativeTarget "FunnyFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -814,6 +921,7 @@
 				0397C6AA1BE1D249005896DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

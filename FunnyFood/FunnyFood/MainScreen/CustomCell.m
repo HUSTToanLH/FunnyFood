@@ -18,6 +18,11 @@
 
 @implementation CustomCell
 
-
+-(void)setData:(DataItem *)item{
+    _imgView.image = item.image;
+    _labelName.text = item.name;
+    _labelPrice.text = item.price;
+    _labelSale.text = item.sale;
+}
 
 @end

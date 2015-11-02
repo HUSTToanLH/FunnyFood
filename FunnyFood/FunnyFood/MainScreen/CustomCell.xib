@@ -22,13 +22,16 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gt8-Lu-obv">
                                 <rect key="frame" x="112" y="40" width="104" height="39"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-20%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6H-db-Nct">
-                                <rect key="frame" x="216" y="40" width="104" height="39"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <rect key="frame" x="216" y="40" width="62" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="NXW-DY-vmQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,21 +45,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ESn-IZ-5je" firstAttribute="top" secondItem="uPU-xG-Lko" secondAttribute="top" id="2Kv-Ib-vUs"/>
-                            <constraint firstItem="x6H-db-Nct" firstAttribute="width" secondItem="ESn-IZ-5je" secondAttribute="width" multiplier="1:2" id="AHf-ZW-vxA"/>
+                            <constraint firstItem="gt8-Lu-obv" firstAttribute="height" secondItem="ESn-IZ-5je" secondAttribute="height" id="3fR-oP-rpm"/>
+                            <constraint firstItem="x6H-db-Nct" firstAttribute="height" secondItem="ESn-IZ-5je" secondAttribute="height" id="Bn0-dJ-43W"/>
                             <constraint firstAttribute="bottom" secondItem="CHI-Gy-NA1" secondAttribute="bottom" id="LFi-K6-PrG"/>
+                            <constraint firstItem="gt8-Lu-obv" firstAttribute="width" secondItem="ESn-IZ-5je" secondAttribute="width" multiplier="1:2" id="Mtl-sM-dSg"/>
                             <constraint firstAttribute="height" secondItem="ESn-IZ-5je" secondAttribute="height" multiplier="2" id="Rjn-Ug-K0h"/>
+                            <constraint firstItem="gt8-Lu-obv" firstAttribute="leading" secondItem="CHI-Gy-NA1" secondAttribute="trailing" constant="5" id="V8w-CU-ZEy"/>
                             <constraint firstItem="CHI-Gy-NA1" firstAttribute="width" secondItem="uPU-xG-Lko" secondAttribute="width" multiplier="1:3" id="XaQ-8Y-m2x"/>
+                            <constraint firstItem="x6H-db-Nct" firstAttribute="leading" secondItem="gt8-Lu-obv" secondAttribute="trailing" id="XrC-sI-cYg"/>
                             <constraint firstItem="CHI-Gy-NA1" firstAttribute="top" secondItem="uPU-xG-Lko" secondAttribute="top" id="Xwn-hd-Kjy"/>
                             <constraint firstAttribute="trailing" secondItem="ESn-IZ-5je" secondAttribute="trailing" id="YFA-q6-PQj"/>
-                            <constraint firstItem="x6H-db-Nct" firstAttribute="height" secondItem="ESn-IZ-5je" secondAttribute="height" id="YHh-6E-bH2"/>
-                            <constraint firstAttribute="bottom" secondItem="x6H-db-Nct" secondAttribute="bottom" id="bsI-jv-QZr"/>
-                            <constraint firstItem="x6H-db-Nct" firstAttribute="leading" secondItem="gt8-Lu-obv" secondAttribute="trailing" id="fG4-Cn-wsD"/>
-                            <constraint firstItem="x6H-db-Nct" firstAttribute="height" secondItem="gt8-Lu-obv" secondAttribute="height" id="jsP-97-thw"/>
+                            <constraint firstAttribute="bottom" secondItem="x6H-db-Nct" secondAttribute="bottom" id="Ynh-Oe-jwi"/>
+                            <constraint firstAttribute="bottom" secondItem="gt8-Lu-obv" secondAttribute="bottom" id="aY2-BD-rf9"/>
                             <constraint firstItem="CHI-Gy-NA1" firstAttribute="leading" secondItem="uPU-xG-Lko" secondAttribute="leading" id="l7w-0V-Ylc"/>
-                            <constraint firstItem="x6H-db-Nct" firstAttribute="width" secondItem="gt8-Lu-obv" secondAttribute="width" id="oBG-io-wGf"/>
-                            <constraint firstAttribute="trailing" secondItem="x6H-db-Nct" secondAttribute="trailing" id="p5a-O1-1kO"/>
                             <constraint firstItem="ESn-IZ-5je" firstAttribute="leading" secondItem="CHI-Gy-NA1" secondAttribute="trailing" constant="5" id="wjm-i6-3gy"/>
-                            <constraint firstAttribute="bottom" secondItem="gt8-Lu-obv" secondAttribute="bottom" id="xsF-sb-qSi"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomCell : UITableViewCell
-
+-(void)setData:(DataItem*)item;
 @end

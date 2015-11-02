@@ -20,7 +20,7 @@
     if(self != [super init])
         return nil;
     
-	_location.row = cell->row;
+    _location.row = cell->row;
     _location.column = cell->col;
     
 	switch(cell->id) {

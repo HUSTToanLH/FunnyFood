@@ -28,8 +28,19 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    if (_isSaleOff) {
+        self.title = @"Sale Off";
+        self.navigationItem.hidesBackButton = YES;
+    }
     
     [self setCornerGroupButton];
+    
+    NSURL *url = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"Chia team.xlsx"]];
+    QZWorkbook *excelReader = [[QZWorkbook alloc] initWithContentsOfXLS:url];
+    QZWorkSheet *firstWorkSheet = excelReader.workSheets.firstObject;
+    [firstWorkSheet open];
+    
+    NSLog(@"test: %@", firstWorkSheet.rows.firstObject);
 }
 
 -(void)setCornerGroupButton{
@@ -62,30 +73,38 @@
     _buttonCola.layer.cornerRadius = width/2;
 }
 
+-(void)setIsSaleOff:(BOOL)isSaleOff{
+    _isSaleOff = isSaleOff;
+}
+
 - (IBAction)onClickCoffee:(id)sender {
-    [self pushVC];
+    [self pushVC:@"coffee"];
 }
 
 - (IBAction)onClickTea:(id)sender {
-    [self pushVC];
+    [self pushVC:@"tea"];
 }
 
 - (IBAction)onClickFruit:(id)sender {
-    [self pushVC];
+    [self pushVC:@"fruit"];
 }
 
 - (IBAction)onClickWine:(id)sender {
-    [self pushVC];
+    [self pushVC:@"wine"];
 }
 
 - (IBAction)onClickCola:(id)sender {
-    [self pushVC];
+    [self pushVC:@"cola"];
 }
 
--(void)pushVC{
+-(void)pushVC:(NSString*)title{
     if (!_detaiScreen) {
         _detaiScreen = [DetailScreenTVC new];
     }
+    if (_isSaleOff) {
+        self.detaiScreen.isSaleOff = YES;
+    }
+    self.detaiScreen.stringTitleGroup = title;
     [self.navigationController pushViewController:_detaiScreen animated:YES];
 }
 
