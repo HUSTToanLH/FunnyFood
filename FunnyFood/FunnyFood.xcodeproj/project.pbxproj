@@ -81,8 +81,6 @@
 		0399C4A11BE354DA00E8AD41 /* 36CG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C49F1BE354DA00E8AD41 /* 36CG.png */; };
 		0399C4A21BE354DA00E8AD41 /* 255NK.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4A01BE354DA00E8AD41 /* 255NK.png */; };
 		0399C4A41BE35DFF00E8AD41 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4A31BE35DFF00E8AD41 /* wall.png */; };
-		0399C4A81BE3744800E8AD41 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0399C4A61BE3744800E8AD41 /* TestVC.m */; };
-		0399C4A91BE3744800E8AD41 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0399C4A71BE3744800E8AD41 /* TestVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,9 +197,6 @@
 		0399C49F1BE354DA00E8AD41 /* 36CG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36CG.png; sourceTree = "<group>"; };
 		0399C4A01BE354DA00E8AD41 /* 255NK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 255NK.png; sourceTree = "<group>"; };
 		0399C4A31BE35DFF00E8AD41 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
-		0399C4A51BE3744800E8AD41 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestVC.h; path = MainScreen/TestVC.h; sourceTree = "<group>"; };
-		0399C4A61BE3744800E8AD41 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestVC.m; path = MainScreen/TestVC.m; sourceTree = "<group>"; };
-		0399C4A71BE3744800E8AD41 /* TestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestVC.xib; path = MainScreen/TestVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,9 +330,6 @@
 				0397C7401BE2218E005896DD /* CustomCell.h */,
 				0397C7411BE2218E005896DD /* CustomCell.m */,
 				0397C7421BE2218E005896DD /* CustomCell.xib */,
-				0399C4A51BE3744800E8AD41 /* TestVC.h */,
-				0399C4A61BE3744800E8AD41 /* TestVC.m */,
-				0399C4A71BE3744800E8AD41 /* TestVC.xib */,
 			);
 			name = MainScreen;
 			sourceTree = "<group>";
@@ -617,7 +609,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0397C73A1BE20B61005896DD /* tea_active.png in Resources */,
-				0399C4A91BE3744800E8AD41 /* TestVC.xib in Resources */,
 				0397C6961BE1D249005896DD /* LaunchScreen.xib in Resources */,
 				0397C6E21BE1F52E005896DD /* nuocchanhmuoi.jpg in Resources */,
 				0397C70A1BE1FB2D005896DD /* sale_active.png in Resources */,
@@ -694,7 +685,6 @@
 				0397C6F41BE1F686005896DD /* QZWorkbook.m in Sources */,
 				0397C7221BE1FE39005896DD /* endian.c in Sources */,
 				0397C7251BE1FE39005896DD /* xlstool.c in Sources */,
-				0399C4A81BE3744800E8AD41 /* TestVC.m in Sources */,
 				0397C6BC1BE1D319005896DD /* AboutVC.m in Sources */,
 				0397C6F51BE1F686005896DD /* QZWorkSheet.m in Sources */,
 				0397C6B91BE1D304005896DD /* AddressVC.m in Sources */,
