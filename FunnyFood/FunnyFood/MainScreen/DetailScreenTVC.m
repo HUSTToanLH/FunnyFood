@@ -15,7 +15,11 @@
 @end
 
 @implementation DetailScreenTVC{
-    NSMutableArray *arrayDataItems;
+    NSMutableArray *arrayCoffee;
+    NSMutableArray *arrayTea;
+    NSMutableArray *arrayFruit;
+    NSMutableArray *arrayWine;
+    NSMutableArray *arrayCola;
 }
 
 - (void)viewDidLoad {
@@ -43,10 +47,10 @@
     }
     
     if (_isSaleOff) {
-        for (int i = 0; i < arrayDataItems.count; i++) {
-            DataItem *item = arrayDataItems[i];
+        for (int i = 0; i < arrayCoffee.count; i++) {
+            DataItem *item = arrayCoffee[i];
             if ([item.sale isEqualToString:@""]) {
-                [arrayDataItems removeObjectAtIndex:i];
+                [arrayCoffee removeObjectAtIndex:i];
                 i--;
             }
         }
@@ -75,7 +79,7 @@
     DataItem *item19 = [[DataItem alloc] initWithName:@"Nước mía lau đường phèn" image:@"nuocmialauduongphen.jpg" price:@"$15" sale:@"-10%"];
     DataItem *item20 = [[DataItem alloc] initWithName:@"Nước mơ" image:@"nuocmo.jpg" price:@"$12" sale:@""];
     
-    arrayDataItems = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19, item20, nil];
+    arrayCoffee = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19, item20, nil];
 }
 
 -(void)createDataTea{
@@ -101,7 +105,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return arrayDataItems.count;
+    return arrayCoffee.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -110,11 +114,11 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil].firstObject;
-    }
+//    if (!cell) {
+//        cell = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil].firstObject;
+//    }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    [cell setData:arrayDataItems[indexPath.row]];
+    [cell setData:arrayCoffee[indexPath.row]];
     return cell;
 }
 
@@ -122,7 +126,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     ContentVC *contentVC = [ContentVC new];
-    [contentVC setContent:arrayDataItems[indexPath.row]];
+    [contentVC setContent:arrayCoffee[indexPath.row]];
     
     if(_isSaleOff){
         contentVC.isSaleOff = YES;

@@ -22,55 +22,51 @@
 
 @implementation MainScreenVC{
     CGFloat width;
+    UIEdgeInsets inset;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     if (_isSaleOff) {
         self.title = @"Sale Off";
         self.navigationItem.hidesBackButton = YES;
     }
     
+    width = 60;
+    inset = UIEdgeInsetsMake(width/10, width/10, width/10, width/10);
+    
     [self setCornerGroupButton];
     
-    NSURL *url = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"Chia team.xlsx"]];
-    QZWorkbook *excelReader = [[QZWorkbook alloc] initWithContentsOfXLS:url];
-    QZWorkSheet *firstWorkSheet = excelReader.workSheets.firstObject;
-    [firstWorkSheet open];
+//    NSURL *url = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"Chia team.xlsx"]];
+//    QZWorkbook *excelReader = [[QZWorkbook alloc] initWithContentsOfXLS:url];
+//    QZWorkSheet *firstWorkSheet = excelReader.workSheets.firstObject;
+//    [firstWorkSheet open];
+//    
+//    NSLog(@"test: %@", firstWorkSheet.rows.firstObject);
     
-    NSLog(@"test: %@", firstWorkSheet.rows.firstObject);
 }
 
 -(void)setCornerGroupButton{
-    width = 60;
-    UIEdgeInsets inset = UIEdgeInsetsMake(width/10, width/10, width/10, width/10);
     
-    [[self.buttonCoffee imageView] setContentMode: UIViewContentModeScaleAspectFit];
-    [_buttonCoffee setImage:[UIImage imageNamed:@"cafe_active"] forState:UIControlStateNormal];
-    _buttonCoffee.contentEdgeInsets = inset;
-    _buttonCoffee.layer.cornerRadius = width/2;
+    [self setCornerButton:self.buttonCoffee imageName:@"cafe_active"];
     
-    [[self.buttonTea imageView] setContentMode: UIViewContentModeScaleAspectFit];
-    [_buttonTea setImage:[UIImage imageNamed:@"tea_active"] forState:UIControlStateNormal];
-    _buttonTea.contentEdgeInsets = inset;
-    _buttonTea.layer.cornerRadius = width/2;
+    [self setCornerButton:self.buttonTea imageName:@"tea_active"];
     
-    [[self.buttonFruit imageView] setContentMode: UIViewContentModeScaleAspectFit];
-    [_buttonFruit setImage:[UIImage imageNamed:@"fruit_active"] forState:UIControlStateNormal];
-    _buttonFruit.contentEdgeInsets = inset;
-    _buttonFruit.layer.cornerRadius = width/2;
+    [self setCornerButton:self.buttonFruit imageName:@"fruit_active"];
     
-    [[self.buttonWine imageView] setContentMode: UIViewContentModeScaleAspectFit];
-    [_buttonWine setImage:[UIImage imageNamed:@"wine_active"] forState:UIControlStateNormal];
-    _buttonWine.contentEdgeInsets = inset;
-    _buttonWine.layer.cornerRadius = width/2;
+    [self setCornerButton:self.buttonWine imageName:@"wine_active"];
     
-    [[self.buttonCola imageView] setContentMode: UIViewContentModeScaleAspectFit];
-    [_buttonCola setImage:[UIImage imageNamed:@"cola_active"] forState:UIControlStateNormal];
-    _buttonCola.contentEdgeInsets = inset;
-    _buttonCola.layer.cornerRadius = width/2;
+    [self setCornerButton:self.buttonCola imageName:@"cola_active"];
+}
+
+- (void)setCornerButton:(UIButton*)button imageName:(NSString*) imageName {
+    [[button imageView] setContentMode: UIViewContentModeScaleAspectFit];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    button.contentEdgeInsets = inset;
+    button.layer.cornerRadius = width/2;
 }
 
 -(void)setIsSaleOff:(BOOL)isSaleOff{
